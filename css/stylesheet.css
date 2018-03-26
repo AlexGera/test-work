@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'DIN Pro - Black';
+    src: url('../fonts/DIN-Pro-Black.otf');
+url('./fonts/DIN-Pro-Black.otf') format('woff'), font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('../fonts/DINPro.otf');
+url('./fonts/DINPro.otf') format('woff'), font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.row {
+    background-color: #f8f8f9;
+    margin: 0 !important;
+}
+
+
+.title {
+    color: #333333;
+    font-family: "DIN Pro - Black", sans-serif;
+    font-size: 68px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 120px 0 124px;
+}
+
+.header {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: block;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    color: #333333;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 0 25px;
+    height: 40px;
+}
+
+.menu-item a {
+    color: #333333!important;
+}
+
+.menu-item:hover a {
+    color: #487fc0;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    border-bottom: 5px solid #487fc0;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #487fc0 !important;
+}
+.search {
+    display: inline-block;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.search-input {
+    background: url("../images/search-icon.png") no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 33px;
+    width: 160px;
+    margin-left: 8px;
+    border: none;
+    text-align: center;
+    padding-right: 33px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.content-title {
+    height: 15px;
+    opacity: 0.6;
+    color: #151525;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.header {
+    background-color: #ffffff;
+}
+
+.post{
+    background-color: #ffffff;
+    margin-bottom: 100px;
+    padding: 0!important;
+    max-width: 1119px;
+}
+
+.post-image {
+    background: url("../images/content-img.png") no-repeat;
+    background-size: cover;
+    height: 350px;
+
+}
+
+.post-title {
+    color: #333333;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin: 50px 0 30px;
+}
+
+.post-details {
+    padding: 0 40px !important;
+    color: #666666;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 415px;
+}
+
+.post-info {
+    border-left: 2px solid #e6e8e9;
+    height: 350px;
+}
+
+
+.post-info__items {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.post-info__description {
+    display: inline-block;
+    color: #333333;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 43px;
+    vertical-align: middle;
+}
+
+.icon {
+    background-size: contain;
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.price-icon {
+    background: url("../images/ticket-cost.png") no-repeat;
+    height: 28px;
+    background-position-x: 5px;
+}
+
+.date-icon {
+    background: url("../images/date.png") no-repeat;
+    height: 27px;
+}
+
+.hours-icon {
+    background: url("../images/time.png") no-repeat;
+    height: 28px;
+}
+
+.social-post {
+    margin: 27px 0 10px 0;
+    list-style: none;
+    padding: 0;
+}
+
+.social-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 33px;
+    width: 33px;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.social-img:first-child {
+    margin-left: 0;
+}
+
+.linkedin-btn {
+    background-image: url("../images/linkedin.png");
+}
+
+.facebook-btn {
+    background-image: url("../images/facebook.png");
+}
+
+.twitter-btn {
+    background-image: url("../images/twitter.png");
+}
+
+.dropdown.add-to-calendar {
+    margin: 58px 0 0 15px;
+    float: left;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.dropdown.add-to-calendar button {
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #151525;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.dropdown.add-to-calendar button[aria-expanded="true"] {
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #151525;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: none;
+}
+.dropdown-menu.calendars-list {
+    margin-top: -2px;
+    border-radius: 0;
+    width: 100%;
+    z-index: -1;
+    border: 1px solid #e6e8e9;
+    box-shadow: none;
+}
+
+.dropdown-menu.calendars-list .dropdown-item {
+    height: 50px;
+    color: #c9caca;
+    padding-left: 10px;
+    line-height: 3;
+    font-weight: bold;
+}
+
+.dropdown-menu.calendars-list .dropdown-item:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 1024px) {
+    .post-image {
+        width: 100%!important;
+    }
+    .post-details {
+        width: 70%!important;
+    }
+    .post-info {
+        width: 30%!important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .title {
+        padding: 10px 0 10px;
+    }
+    .dropdown.add-to-calendar {
+        float: none;
+        padding-bottom: 20px;
+    }
+    .post-info {
+        border: none;
+    }
+    .content-title{
+        margin: 30px 0;
+    }
+}
+
