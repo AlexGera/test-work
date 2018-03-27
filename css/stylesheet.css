@@ -24,9 +24,17 @@ a {
 .row {
     background-color: #f8f8f9;
     margin: 0 !important;
+    width:100%;
+    float:left;
 }
 
-
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f8f8f9;
+}
 .title {
     color: #333333;
     font-family: "DIN Pro - Black", sans-serif;
@@ -35,6 +43,8 @@ a {
     text-align: center;
     text-transform: uppercase;
     padding: 120px 0 124px;
+    width:100%;
+    margin: 0;
 }
 
 .header {
@@ -48,6 +58,7 @@ a {
     padding-left: 0;
     display: block;
     text-align: center;
+    height: 45px;
 }
 
 .menu-item {
@@ -76,6 +87,7 @@ a {
     font-weight: 400;
     cursor: pointer;
     color: #487fc0 !important;
+    height: 40px;
 }
 .search {
     display: inline-block;
@@ -103,6 +115,8 @@ a {
 
 ::placeholder {
     color: #000000;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .content-title {
@@ -116,6 +130,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     margin: 100px 0;
+    width:100%;
 }
 
 .header {
@@ -127,13 +142,17 @@ a {
     margin-bottom: 100px;
     padding: 0!important;
     max-width: 1119px;
+    width:100%;
+    float: left;
 }
 
 .post-image {
     background: url("../images/content-img.png") no-repeat;
     background-size: cover;
     height: 350px;
-
+    width:33.3%;
+    display: inline-block;
+    float: left;
 }
 
 .post-title {
@@ -154,11 +173,18 @@ a {
     font-weight: 400;
     line-height: 24px;
     max-width: 415px;
+    width:34%;
+    display: inline-block;
+    float: left;
 }
 
 .post-info {
     border-left: 2px solid #e6e8e9;
     height: 350px;
+    width:25%;
+    display: inline-block;
+    position: relative;
+    float: left;
 }
 
 
@@ -167,7 +193,11 @@ a {
     transform: translateY(-50%);
     position: absolute;
 }
-
+.post-info__item{
+    width:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 .post-info__description {
     display: inline-block;
     color: #333333;
@@ -185,21 +215,6 @@ a {
     vertical-align: middle;
 }
 
-.price-icon {
-    background: url("../images/ticket-cost.png") no-repeat;
-    height: 28px;
-    background-position-x: 5px;
-}
-
-.date-icon {
-    background: url("../images/date.png") no-repeat;
-    height: 27px;
-}
-
-.hours-icon {
-    background: url("../images/time.png") no-repeat;
-    height: 28px;
-}
 
 .social-post {
     margin: 27px 0 10px 0;
@@ -220,26 +235,7 @@ a {
     margin-left: 0;
 }
 
-.linkedin-btn {
-    background-image: url("../images/linkedin.png");
-}
-
-.facebook-btn {
-    background-image: url("../images/facebook.png");
-}
-
-.twitter-btn {
-    background-image: url("../images/twitter.png");
-}
-
 .dropdown.add-to-calendar {
-    margin: 58px 0 0 15px;
-    float: left;
-    width: 100%;
-    padding-right: 20px;
-}
-
-.dropdown.add-to-calendar button {
     height: 50px;
     border-radius: 3px;
     border: 2px solid #151525;
@@ -249,26 +245,20 @@ a {
     font-size: 18px;
     font-weight: 500;
     width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 2.5;
+    margin-left: 40px;
 }
 
-.dropdown.add-to-calendar button[aria-expanded="true"] {
-    height: 50px;
-    border-radius: 3px;
-    border: 2px solid #151525;
-    background-color: #ffffff;
-    color: #000000;
-    font-family: "DIN Pro", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    box-shadow: none;
-}
 .dropdown-menu.calendars-list {
-    margin-top: -2px;
+    margin-top: 7px;
     border-radius: 0;
     width: 100%;
     z-index: -1;
     border: 1px solid #e6e8e9;
     box-shadow: none;
+    text-align: left;
 }
 
 .dropdown-menu.calendars-list .dropdown-item {
@@ -282,6 +272,13 @@ a {
 .dropdown-menu.calendars-list .dropdown-item:hover {
     color: #000000;
     text-decoration: none;
+}
+
+.dropdown.add-to-calendar:hover .dropdown-menu.calendars-list {
+    display:block;
+}
+.dropdown-menu.calendars-list{
+    display:none;
 }
 
 @media only screen and (min-width: 376px) and (max-width: 1024px) {
@@ -310,5 +307,50 @@ a {
     .content-title{
         margin: 30px 0;
     }
+    .menu{
+        height:130px;
+    }
+    .post-details{
+        width:85%;
+    }
+    .post-image{
+        width:100%;
+    }
+    .post-info{
+        width:100%;
+    }
+    .dropdown.add-to-calendar{
+        padding-bottom: 0;
+    }
 }
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    .menu{
+        height:130px;
+    }
+    .dropdown.add-to-calendar{
+        width:90%;
+    }
+
+}
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width:1200px) {
+.post-details {
+    width: 33%;
+}
+}
+
+
+
 
